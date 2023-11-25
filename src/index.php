@@ -2,11 +2,11 @@
 <html lang="en" >
 
 <head>
-<?php include('head.php');?>
+<?php include('php/head.php');?>
 
 </head>
 <body>
-<?php include('body.php');?>
+<?php include('php/body.php');?>
 
 </body>
 </html>
