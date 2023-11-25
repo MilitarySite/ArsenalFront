@@ -1,3 +1,4 @@
+<?php include('headofnavbar.php');?>
 <div class="fixed-nav-bar">
     <div class="logo"><span>Arsenal</span>Front</div>
     <input type="checkbox" id="menuButton" />
