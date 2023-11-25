@@ -1,4 +1,5 @@
 <?php include('headofnavbar.php');?>
+<nav class="nav">
 <div class="fixed-nav-bar">
     <div class="logo"><span>Arsenal</span>Front</div>
     <input type="checkbox" id="menuButton" />
@@ -15,7 +16,7 @@
         <i></i>
         <i></i>
     </span>
-
+</nav>
 
 <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
