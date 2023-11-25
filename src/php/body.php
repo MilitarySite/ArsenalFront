@@ -1,29 +1,6 @@
 <body>
 <!-- partial:index.partial.html -->
-<div class="fixed-nav-bar">
-    <div class="logo"><span>Arsenal</span>Front</div>
-    <input type="checkbox" id="menuButton" />
-    <div id="mainListDiv" class="main_list">
-        <ul class="navlinks">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-    <span class="navTrigger">
-        <i></i>
-        <i></i>
-        <i></i>
-    </span>
-
-    <!--<label for="menuButton" class="menu-button-label">
-        <div class="white-bar"></div>
-        <div class="white-bar"></div>
-        <div class="white-bar"></div>
-        <div class="white-bar"></div>
-    </label>-->
-</div>
+<?php include('menu.php');?>
 <!--<div class="the-bass">
     <div class="rela-block drop-down-container">
         <div class="drop-down-item"></div>
