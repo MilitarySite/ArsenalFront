@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-fixed-nav-bar {
+.fixed-nav-bar {
     position: fixed;
     top: 0;
     left: 0;
