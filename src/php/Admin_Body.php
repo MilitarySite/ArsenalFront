@@ -1,6 +1,7 @@
 <body>
 <nav>
-<?php include('AdministratorMenu.php');?>
+<?php include('Admin_Menu.php');?>
 </nav>
-<?php include('AdministratorSideBar.php');?>
+<?php include('Admin_SideBar.php');?>
+<?php include('Admin_Content.php');?>
 </body>

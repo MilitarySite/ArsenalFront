@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-   <?php include('AdministratorHead.php');?>
+   <?php include('Admin_Head.php');?>
 </head> 
     <body class="sb-nav-fixed">
-        <?php include('AdministratorBody.php');?>
+        <?php include('Admin_Body.php');?>
 
             <div id="layoutSidenav_content">
                 <main>
@@ -561,7 +561,7 @@
                         </div>
                     </div>
                 </main>
-                <?php include('AdministratorFooter.php');?>
+                <?php include('Admin_Footer.php');?>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
