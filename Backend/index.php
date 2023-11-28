@@ -21,7 +21,7 @@
       <li><a href="#">Page 2</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a target="_blank"  href="src/php/TemporaryLogin.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a target="_blank"  href="src/php/loginpage.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
   </div>
 </nav>
