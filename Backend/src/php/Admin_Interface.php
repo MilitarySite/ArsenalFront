@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <?php include('Admin_Head.php');?>
-        <link href="src/css/AdminStyle.css" rel="stylesheet" />
+        <link href="../css/AdminStyle.css" rel="stylesheet" />
 
     </head> 
     <body class="sb-nav-fixed">
@@ -18,4 +18,17 @@
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="src/js/datatables-simple-demo.js"></script>
     </body>
+    
 </html>
+
+<?php 
+    
+    include "database/db_conn.php";
+    
+    if (isset($_POST['uname'])) {
+        $unameValue = $_POST['uname'];
+        echo "The uname is: " . $unameValue;
+
+    }
+
+?>
