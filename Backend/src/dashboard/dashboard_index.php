@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard V.3 | Nalika - Material Admin Template</title>
+    <title>Military Army</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -848,15 +848,11 @@
 											</div>
 											<div class="breadcomb-ctn">
 												<h2>Dashboard Three</h2>
-												<p>Welcome to Nalika <span class="bread-ntd">Admin Template</span></p>
+												<p>Welcome to the <span class="bread-ntd">Admin Dashboard</span></p>
 											</div>
 										</div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                        <div class="breadcomb-report">
-											<button data-toggle="tooltip" data-placement="left" title="Download Report" class="btn"><i class="icon nalika-download"></i></button>
-										</div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
