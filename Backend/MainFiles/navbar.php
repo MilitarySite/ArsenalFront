@@ -1,13 +1,12 @@
-
-  <div class="container-fluid">
+<div class="container-fluid">
     <!--<div class="logo">
       <img src ="src/img/Head_Logo.jpg">
     </div>-->
     <ul class="nav navbar-nav">
-    <li><img class="logo" src ="src/img/Head_Logo.jpg"></li>
+    <li><img class="logo" src ="../src/img/Head_Logo.jpg"></li>
       <li class="active"><a href="index.php">Home</a></li>
       <li><a href="WeaponsPage.php">Armi</a></li>
-      <li><a target="_blank"  href="src/php/loginpage.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a target="_blank"  href="../src/php/loginpage.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       <li> 
       <form role="search">
 				<input type="text" placeholder="Search...">

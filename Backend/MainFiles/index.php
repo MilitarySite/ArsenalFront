@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-  <?php include 'MainFiles/head.php'?>
+  <?php include 'head.php'?>
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <nav class="fixed-nav-bar logo span scrolled ">
-    <?php include 'MainFiles/navbar.php'?>
+    <?php include 'navbar.php'?>
 </nav>
 
 <h2>Automatic Slideshow</h2>
@@ -129,7 +129,7 @@
     </div>
 </div>
 <footer class="footer">
-    <?php include 'MainfFiles/footer.php' ?>
+    <?php include 'footer.php' ?>
 </footer>
 <!-- partial -->
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
