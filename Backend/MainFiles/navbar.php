@@ -1,4 +1,4 @@
-<nav class="fixed-nav-bar logo span scrolled ">
+
   <div class="container-fluid">
     <!--<div class="logo">
       <img src ="src/img/Head_Logo.jpg">
@@ -6,7 +6,7 @@
     <ul class="nav navbar-nav">
     <li><img class="logo" src ="src/img/Head_Logo.jpg"></li>
       <li class="active"><a href="index.php">Home</a></li>
-      <li><a href="#">Armi</a></li>
+      <li><a href="WeaponsPage.php">Armi</a></li>
       <li><a target="_blank"  href="src/php/loginpage.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       <li> 
       <form role="search">
@@ -16,4 +16,3 @@
       </li>
     </ul>
   </div>
-</nav>
