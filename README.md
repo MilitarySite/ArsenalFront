@@ -23,7 +23,7 @@ Disponibile su Github sotto <a href="LICENSE" target=" _blank">Licenza MIT</a> <
 ```
 > PAGE
 
->  -ꦼ———▸ 1️ Home Page
+>  -ꦼ———▸ 1 Home Page
 >  -ꦼ———▸ 2 Weapons
          ——▸ 1 Storage Weapons
 >  -ꦼ———▸ 3 Login
