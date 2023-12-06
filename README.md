@@ -1,6 +1,6 @@
 <!--IMG PRESENTAZIONE-->
 <div align="center" style"border-radius:15px">
-  <img src="F" style"width:100%;border-radius:15px">
+  <img src="ReadmeINT.jpg" style"width:100%;border-radius:15px">
 </div>
 &nbsp;
 
