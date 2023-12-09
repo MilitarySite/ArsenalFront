@@ -1,28 +1,32 @@
-# Nalika
-Free dark design Bootstrap admin dashboard template
+<!--IMG PRESENTAZIONE-->
+<div align="center" style"border-radius:15px">
+  <img src="src/assets/img/readme/ReadmeINT.jpg" style"width:100%;border-radius:15px">
+</div>
+&nbsp;
 
-# Preview
+<!--TEXT PRESENTAZIONE-->
+## <div align="center"><h2><b>ArsenalFront ☆ WEBSITE</b></h2></div>  
+<div align="center"><p>Copyright 2023 © Heinrich | Porro | Sappia</p></div> 
+&nbsp;
 
-### Screenshot
-
-![Nalika admin dashboard template preview](https://colorlib.com/wp/wp-content/uploads/sites/2/nalika-simple-free-bootstrap-admin-dashboard.jpg)
-
-
-### Demo Site: [Here](https://colorlib.com/polygon/nalika/index.html)
-
-### Changelog
+Website based on pure HTML - CSS - JS - PHP<br />
+Disponibile su Github sotto <a href="LICENSE" target=" _blank">Licenza MIT</a> <br />
 #### V 1.0.0
-Initial Release
-### Authors
-[Colorlib](https://colorlib.com)
+&nbsp;
 
-### More info
-- [Bootstrap Admin Templates](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/)
-- [Angular dashboards](https://colorlib.com/wp/angularjs-admin-templates/)
-- [Admin Dashboards](https://colorlib.com/wp/free-html5-admin-dashboard-templates/)
-- [HTML Templates](https://colorlib.com/wp/templates/)
-- [WordPress Themes](https://colorlib.com/wp/free-wordpress-themes/)
+# Preview Site
+<div align="center"><p><img src="https://colorlib.com/wp/wp-content/uploads/sites/2/nalika-simple-free-bootstrap-admin-dashboard.jpg" alt="Nalika admin dashboard template preview"></p></div> 
+&nbsp;
 
-### License
+***
+<!--INFORMATION-->
+```
+> PAGE
 
-Nalika is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the final products. But you always need to state that Colorlib is the original author of this template.
+>  -ꦼ———▸ 1 Home Page
+>  -ꦼ———▸ 2 Weapons
+         ——▸ 1 Storage Weapons
+>  -ꦼ———▸ 3 Login
+
+>  -ꦼ———▸ 4 DashBoard Admin
+```
