@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina Responsive con Animazioni</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .section {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      animation: slideIn 1s forwards;
+    }
+
+    .left {
+      background-color: #f0f0f0;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .right {
+      background-color: #e0e0e0;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <div class="left">
+      <img src="path/to/your/image1.jpg" alt="Immagine 1">
+    </div>
+    <div class="right">
+      <p>Testo della prima sezione</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="left">
+      <p>Testo della seconda sezione</p>
+    </div>
+    <div class="right">
+      <img src="path/to/your/image2.jpg" alt="Immagine 2">
+    </div>
+  </div>
+
+</body>
+</html>
