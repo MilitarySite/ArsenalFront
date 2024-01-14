@@ -18,6 +18,7 @@
       width: 100vw;
       height: 100vh;
       overflow: hidden;
+      opacity: 1; /* Imposta l'opacità iniziale a 1 */
     }
 
     .left, .right {
@@ -47,69 +48,84 @@
       order: 2;
     }
 
-    @keyframes slideIn {
+    @keyframes slideInLeft {
       0% {
         transform: translateX(-100%);
+        opacity: 0;
       }
       100% {
         transform: translateX(0);
+        opacity: 1;
       }
     }
 
-    @keyframes slideInFromRight {
+    @keyframes slideInRight {
       0% {
         transform: translateX(100%);
+        opacity: 0;
       }
       100% {
         transform: translateX(0);
+        opacity: 1;
       }
     }
 
-    /* Aggiunta classe per la seconda sezione */
-    .section.second-section {
-      opacity: 0; /* Inizialmente impostiamo l'opacità a 0 */
+    /* Aggiunta classe animata */
+    .animated-left {
+      animation: slideInLeft 1s forwards;
+    }
+
+    .animated-right {
+      animation: slideInRight 1s forwards;
     }
   </style>
 </head>
 <body>
 
-  <div class="section">
-    <div class="left">
+  <div class="section" id="section1">
+    <div class="left animated-left"> <!-- Aggiunta classe animata-left -->
       <img src="path/to/your/image1.jpg" alt="Immagine 1">
     </div>
-    <div class="right">
+    <div class="right animated-left"> <!-- Aggiunta classe animata-left -->
       <p>Testo della prima sezione</p>
     </div>
     <div class="divider"></div>
   </div>
 
-  <div class="section second-section">
-    <div class="left">
+  <div class="section" id="section2">
+    <div class="left animated-right"> <!-- Aggiunta classe animata-right -->
       <p>Testo della seconda sezione</p>
     </div>
-    <div class="right">
+    <div class="right animated-right"> <!-- Aggiunta classe animata-right -->
       <img src="path/to/your/image2.jpg" alt="Immagine 2">
     </div>
     <div class="divider"></div>
   </div>
 
   <script>
-    // Funzione per gestire l'animazione quando la sezione è visibile
     function handleIntersection(entries, observer) {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate'); // Aggiungi la classe 'animate' quando la sezione è visibile
-          observer.unobserve(entry.target); // Interrompi l'osservazione una volta che l'animazione è stata avviata
+          if (entry.target.id === 'section1') {
+            entry.target.classList.add('animated-left');
+          } else if (entry.target.id === 'section2') {
+            entry.target.classList.add('animated-right');
+          }
+          observer.unobserve(entry.target);
         }
       });
     }
 
-    // Configurazione dell'Intersection Observer
-    const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+    const options = {
+      threshold: 0.5
+    };
 
-    // Osservare la seconda sezione
-    const secondSection = document.querySelector('.second-section');
-    observer.observe(secondSection);
+    const observer = new IntersectionObserver(handleIntersection, options);
+
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+      observer.observe(section);
+    });
   </script>
 
 </body>
