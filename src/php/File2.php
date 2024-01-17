@@ -12,6 +12,7 @@
     // In File2.php, retrieve the submitted ID
     $id = isset($_GET['id']) ? $_GET['id'] : 0; // Default value 0 if no ID was transferred
 
+    
     include "db_conn.php";
 
     if (!$conn) {
