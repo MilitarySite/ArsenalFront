@@ -1,3 +1,10 @@
+footer {
+    display: flex;
+    justify-content: center; /* Centra i cerchi nel footer */
+    background-color: #333;
+    padding: 20px;
+  }
+
 .member {
     position: relative;
     cursor: pointer;
