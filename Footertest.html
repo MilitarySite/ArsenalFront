@@ -11,7 +11,7 @@
 
     footer {
       display: flex;
-      justify-content: center; /* Centra i cerchi nel footer */
+      justify-content: space-around;
       background-color: #333;
       padding: 20px;
     }
@@ -20,10 +20,10 @@
       position: relative;
       cursor: pointer;
       overflow: hidden;
-      width: 100px;
-      height: 100px;
+      width: 150px; /* Larghezza dei blocchi */
+      height: 150px; /* Altezza dei blocchi */
       border-radius: 50%;
-      margin: 0 10px; /* Spazio tra i cerchi */
+      margin: 0 20px; /* Spazio tra i blocchi */
     }
 
     .member img {
@@ -47,7 +47,7 @@
 
     .member:hover .overlay {
       background: rgba(255, 255, 255, 0.3);
-      opacity: 0.5;
+      opacity: 1;
     }
   </style>
   <script defer>
@@ -71,7 +71,7 @@
 <body>
 
 <footer>
-  <div class="member" id="member1" data-email="mttporro@gmail.com">
+  <div class="member" id="member1" data-email="membro1@email.com">
     <img src="member1.jpg" alt="Membro 1">
     <div class="overlay"></div>
   </div>
