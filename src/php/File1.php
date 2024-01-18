@@ -75,7 +75,7 @@
     <section class="page-section py-0" id="diashow"> <!-- continua fu -->
         <div class="home-slider owl-carousel js-fullheight">
 
-            <a href ="File2.php?id=1&tabel=1"  style="text-decoration: none;">
+            <a href ="File2.php?id=1&"  style="text-decoration: none;">
                 <div class="slider-item js-fullheight" style="background-image:url(assets/img/slider-1.jpg);">
                     <div class="overlay"></div>
                 <div class="container">
