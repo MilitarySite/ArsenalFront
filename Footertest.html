@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center; /* Centra i cerchi nel footer */
+      background-color: #333;
+      padding: 20px;
+    }
+
+    .member {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 10px; /* Spazio tra i cerchi */
+    }
+
+    .member img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0);
+      opacity: 0;
+      border-radius: 50%;
+      transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    }
+
+    .member:hover .overlay {
+      background: rgba(255, 255, 255, 0.3);
+      opacity: 0.5;
+    }
+  </style>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      const members = document.querySelectorAll('.member');
+
+      members.forEach(member => {
+        member.addEventListener('click', function () {
+          const memberId = this.id;
+          const memberEmail = this.getAttribute('data-email');
+          const subject = encodeURIComponent(`Email per ${memberId}`);
+          const body = encodeURIComponent('Scrivi qui il tuo messaggio...');
+
+          window.location.href = `mailto:${memberEmail}?subject=${subject}&body=${body}`;
+        });
+      });
+    });
+  </script>
+  <title>Footer con effetto</title>
+</head>
+<body>
+
+<footer>
+  <div class="member" id="member1" data-email="mttporro@gmail.com">
+    <img src="member1.jpg" alt="Membro 1">
+    <div class="overlay"></div>
+  </div>
+  <div class="member" id="member2" data-email="membro2@email.com">
+    <img src="member2.jpg" alt="Membro 2">
+    <div class="overlay"></div>
+  </div>
+  <div class="member" id="member3" data-email="membro3@email.com">
+    <img src="member3.jpg" alt="Membro 3">
+    <div class="overlay"></div>
+  </div>
+  <div class="member" id="member4" data-email="membro4@email.com">
+    <img src="member4.jpg" alt="Membro 4">
+    <div class="overlay"></div>
+  </div>
+</footer>
+
+</body>
+</html>
