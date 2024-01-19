@@ -69,13 +69,40 @@
     var currentIndex = 0;
 
     immaginiId1.forEach(function (img, index) {
+        // Creazione di un link
+        var linkElement = document.createElement('a');
+        
+
+        linkElement.id = 'imgLink_' + index; // Assegna un ID statico basato sulla posizione nell'array
+        linkElement.href = 'File2.php'; // Aggiunto il carattere jolly come placeholder, potrebbe essere cambiato con il link corretto
+        linkElement.target = '_blank'; // Apre il link in una nuova finestra/tab
+        var position = index+1;
+        // Creazione dell'elemento immagine
         var imgElement = document.createElement('img');
         imgElement.src = img.src;
-        diashowContainer.appendChild(imgElement);
+
+        // Aggiunta dell'immagine al link
+        linkElement.appendChild(imgElement);
+
+        // Aggiunta del link al container di diashow
+        diashowContainer.appendChild(linkElement);
+
+        // Aggiungi un listener per gestire il clic su ciascuna immagine
+        linkElement.addEventListener('click', function(event) {
+            // Impedisci l'azione predefinita del link per evitare il reindirizzamento
+            event.preventDefault();
+
+            // Ottieni la posizione dell'immagine nell'array
+            //var position = parseInt(linkElement.id.split('_')[1]);
+
+            // Puoi ora fare qualcosa con la posizione, ad esempio, visualizzarla
+            alert('Hai cliccato sull\'immagine alla posizione: ' + index + position);
+            var newWindow = window.open('File2.php?id=' + position, '_blank');        });
+       
     });
 
     function mostraImmagine(index) {
-        var immagini = diashowContainer.getElementsByTagName('img');
+        var immagini = diashowContainer.getElementsByTagName('a');
 
         // Nasconde tutte le immagini
         for (var i = 0; i < immagini.length; i++) {
@@ -98,4 +125,6 @@
     setInterval(cambiaImmagine, 5000);
 </script>
 
+
 </html>
+
