@@ -272,7 +272,8 @@
                                             Singola
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=1">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=1&tabelid=1" ></a>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -306,7 +307,7 @@
                                             Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=2">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=2&tabelid=2">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +340,7 @@
                                             Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=3">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=3&tabelid=3">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -372,7 +373,7 @@
                                             Singola/Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=4">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=4&tabelid=4">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -405,7 +406,7 @@
                                             Singola/Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=5">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=5&tabelid=5">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -438,7 +439,7 @@
                                             Singola
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=6">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=6&tabelid=6">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -471,7 +472,7 @@
                                             Singola
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=7">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=7&tabelid=7">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -504,7 +505,7 @@
                                             Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=8">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=8&tabelid=8">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -537,7 +538,7 @@
                                             Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=9">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=9&tabelid=9">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>

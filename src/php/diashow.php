@@ -1,6 +1,7 @@
 <?php
     $imgid = isset($_GET['imgid']) ? $_GET['imgid'] : 0; 
-    
+    $tabelid = isset($_GET['tabelid']) ? $_GET['tabelid'] :0;
+    echo "value: " . $tabelid;
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -118,15 +119,56 @@
 <script>
     // Recupera il valore imgid dalla query string PHP
     var imgid = <?php echo isset($_GET['imgid']) ? $_GET['imgid'] : 0; ?>;
+    var tabelid = <?php echo isset($_GET['tabelid']) ? $_GET['tabelid']: 0; ?>;
+    
 
     // Array di immagini con lo stesso ID
     var immagini = [
-    { id: 1, src: '../assets/img/Diashow/Download.png' },
-    { id: 1, src: '../assets/img/Diashow/Download-_1_.png' },
-    { id: 1, src: '../assets/img/Diashow/Download-_2_.png' },
-    { id: 1, src: '../assets/img/Diashow/Download-_3_.png' },
-    { id: 1, src: '../assets/img/Diashow/Download-_4_.png' },
-    { id: 2, src: '../assets/img/Diashow/unnamed.png'}
+    { id: 1, src: '../assets/img/Diashow/P-1.jpg' },
+    { id: 1, src: '../assets/img/Diashow/P-2.jpg' },
+    { id: 1, src: '../assets/img/Diashow/P-3.jpg' },
+    { id: 1, src: '../assets/img/Diashow/P-4.jpg' },
+    { id: 1, src: '../assets/img/Diashow/P-5.jpg' },
+    { id: 2, src: '../assets/img/Diashow/Ar-1.jpg'},
+    { id: 2, src: '../assets/img/Diashow/Ar-2.jpg'},
+    { id: 2, src: '../assets/img/Diashow/Ar-3.jpg'},
+    { id: 2, src: '../assets/img/Diashow/Ar-4.jpg'},
+    { id: 2, src: '../assets/img/Diashow/Ar-5.jpg'},
+    { id: 3, src: '../assets/img/Diashow/Lmg-1.jpg'},
+    { id: 3, src: '../assets/img/Diashow/Lmg-2.jpg'},
+    { id: 3, src: '../assets/img/Diashow/Lmg-3.jpg'},
+    { id: 3, src: '../assets/img/Diashow/Lmg-4.jpg'},
+    { id: 3, src: '../assets/img/Diashow/Lmg-5.jpg'},
+    { id: 4, src: '../assets/img/Diashow/Fp-1.jpg'},
+    { id: 4, src: '../assets/img/Diashow/Fp-2.jpg'},
+    { id: 4, src: '../assets/img/Diashow/Fp-3.jpg'},
+    { id: 4, src: '../assets/img/Diashow/Fp-4.jpg'},
+    { id: 4, src: '../assets/img/Diashow/Fp-5.jpg'},
+    { id: 5, src: '../assets/img/Diashow/Smg-1.jpg'},
+    { id: 5, src: '../assets/img/Diashow/Smg-2.jpg'},
+    { id: 5, src: '../assets/img/Diashow/Smg-3.jpg'},
+    { id: 5, src: '../assets/img/Diashow/Smg-4.jpg'},
+    { id: 5, src: '../assets/img/Diashow/Smg-5.jpg'},
+    { id: 6, src: '../assets/img/Diashow/C-1.jpg'},
+    { id: 6, src: '../assets/img/Diashow/C-2.jpg'},
+    { id: 6, src: '../assets/img/Diashow/C-3.jpg'},
+    { id: 6, src: '../assets/img/Diashow/C-4.jpg'},
+    { id: 6, src: '../assets/img/Diashow/C-5.jpg'},
+    { id: 7, src: '../assets/img/Diashow/G-1.jpg'},
+    { id: 7, src: '../assets/img/Diashow/G-2.jpg'},
+    { id: 7, src: '../assets/img/Diashow/G-3.jpg'},
+    { id: 7, src: '../assets/img/Diashow/G-4.jpg'},
+    { id: 7, src: '../assets/img/Diashow/G-5.jpg'},
+    { id: 8, src: '../assets/img/Diashow/S-1.jpg'},
+    { id: 8, src: '../assets/img/Diashow/S-2.jpg'},
+    { id: 8, src: '../assets/img/Diashow/S-3.jpg'},
+    { id: 8, src: '../assets/img/Diashow/S-4.jpg'},
+    { id: 8, src: '../assets/img/Diashow/S-5.jpg'},
+    { id: 9, src: '../assets/img/Diashow/Lg-1.jpg'},
+    { id: 9, src: '../assets/img/Diashow/Lg-2.jpg'},
+    { id: 9, src: '../assets/img/Diashow/Lg-3.jpg'},
+    { id: 9, src: '../assets/img/Diashow/Lg-4.jpg'},
+    { id: 9, src: '../assets/img/Diashow/Lg-5.jpg'}
 ];
 
     // Filtra le immagini basate su imgid
@@ -146,7 +188,7 @@
         imgElement.addEventListener('click', function() {
             // Quando l'immagine è cliccata, reindirizza con l'ID (posizione + 1)
             alert('hai cliccato sull\'immagine alla posizione: ' + index + position)
-            window.location.href = 'File2.php?id=' + position;
+            window.location.href = 'File2.php?id=' + position + '&tabelid=' + tabelid;
         });
 
         // Aggiunta dell'immagine al container di diashow
