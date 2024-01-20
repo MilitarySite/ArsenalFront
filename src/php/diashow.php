@@ -73,6 +73,16 @@
             <div class="masthead-heading text-uppercase fs-title">Scegli l'arma che preferisci!</div>  
         </div>
     </header>
+    <section class="page-section bg-dark">
+            <div class="container">
+                <div class="text-center">
+                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0">All'interno di ognuna delle sezioni relative alle armi, troverai 5
+                        modelli diversi. Per ciascuno di essi, troverai descrizioni precise su tutte le caratteristiche dell'arma. Speriamo che queste 
+                        informazioni possano ritornarvi utili :)
+                    </h3>
+                </div>
+            </div>
+        </section>    
 
     <div id="diashow-container"></div>
 
