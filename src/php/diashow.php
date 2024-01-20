@@ -6,31 +6,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diashow</title>
-    <!-- Aggiungi eventuali stili o collegamenti ai file CSS necessari -->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
+     <!-- Meta tag -->
+     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        #diashow-container {
-            text-align: center;
-        }
+    <meta name="description" content="ArsenalFront" />
+    <meta name="author" content="Team ArsenalFront" />
 
-        #diashow-container img {
-            max-width: 100%;
-            height: auto;
-            cursor: pointer;
-        }
-    </style>
+    <!-- Meta tag og -->
+    <meta property="og:title" content="ArsenalFront">
+    <meta property="og:type" content="Weapons">
+    <meta property="og:description" content="ArsenalFront">
+
+    <!-- Generality -->
+    <title>ArsenalFront</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/img/Head_Logo.jpg" />
+
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/search.css" />
+    <link rel="stylesheet" href="../css/animatedfooter.css" />
 </head>
 <body>
 
-<div id="diashow-container"></div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <!-- Icon Left -->
+        <a class="navbar-brand" href="#page-top">
+            <h2 class="section-heading text-uppercase">ArsenalFront</h2>
+        </a>
+        <!-- Button Mobile - menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <!-- Nav site -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-0 py-lg-0">
+                <li class="nav-item">     
+                    <div class="search-container">
+                        <form action="php/search.php" method="get">
+                            <input type="text" name="query" placeholder="Cerca...">
+                            <button type="submit">Cerca</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="WeaponPage.php">Armi</a></li>
+                <li class="nav-item"><a class="nav-link" href="loginpage.php">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<header class="masthead">
+        <div class="container">
+        <div class="masthead-heading text-uppercase">Scegli l'arma che preferisci!</div>
+            <div class="text-center">
+                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0">All'interno di ognuna delle sezioni relative alle armi, troverai 5
+                        modelli diversi. Per ciascuno di essi, troverai descrizioni precise su tutte le caratteristiche dell'arma. Speriamo che queste 
+                        informazioni possano ritornarvi utili :)
+                    </h3>
+                </div>  
+        </div>
+    </header>
+    <main>
+    
+    <div id="diashow-container"></div>
+
+</main>
+
+<footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <!--<div class="col-lg-4 text-lg-start">Copyright &copy; Porro</div>-->
+                <div class="member" id="member1" onclick="sendEmail('sappia.fulvio@polotecnologicoimperiese.it')">
+                    <img src="assets/img/team/1.jpg" alt="Foto Sappippa">
+                    <div class="overlayz"></div>
+                  </div>
+                  <div class="member" id="member2" onclick="sendEmail('heinrich.kevin@polotecnologicoimperiese.it')">
+                    <img src="assets/img/team/2.jpg" alt="Foto Tedesco Heineken">
+                    <div class="overlayz"></div>
+                  </div>
+                  <div class="member" id="member3" onclick="sendEmail('porro.matteo@polotecnologicoimperiese.it')">
+                    <img src="assets/img/team/3.jpg" alt="Foto Re Dei Porri">
+                    <div class="overlayz"></div>
+                  </div>
+                  <div class="member" id="member4" onclick="sendEmail('contri.marco@polotecnologicoimperiese.it')">
+                    <img src="assets/img/team/1.jpg" alt="Foto di quello che non inContri">
+                    <div class="overlayz"></div>
+                  </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
 <script>
     // Recupera il valore imgid dalla query string PHP
     var imgid = <?php echo isset($_GET['imgid']) ? $_GET['imgid'] : 0; ?>;
@@ -132,6 +217,23 @@
 
     // Imposta un intervallo per cambiare l'immagine ogni 2 secondi
     setInterval(cambiaImmagine, 5000);
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/scripts.js"></script>
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </script>
 
 </body>

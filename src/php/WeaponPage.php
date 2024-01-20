@@ -81,11 +81,6 @@
         <!-- Portfolio Grid --> 
         <section class="page-section bg-light" id="portfolio">
             <div class="container">
-                <!-- <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Benvenuti su ArsenalFront, il portale definitivo per gli appassionati di armi! 
-                        Esplorate la nostra vasta gamma di descrizioni dettagliate sulle armi da fuoco di ultima generazione. Il nostro sito offre approfondimenti tecnici, immagini esplicative e guide all'utilizzo su tutte le categorie di armi attualmente utilizzate nel ramo militare. Che siate tiratori sportivi, collezionisti o semplici curiosi, ArsenalFront offre un ambiente informativo e sicuro per soddisfare la vostra passione.</h3>
-                </div> -->
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
