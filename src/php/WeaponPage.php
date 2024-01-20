@@ -311,7 +311,7 @@
                                             Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="Weapons/Guns.html">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=2">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -344,7 +344,7 @@
                                             Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="Weapons/Guns.html">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=3">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -377,7 +377,7 @@
                                             Singola/Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="Weapons/Guns.html">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=4">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -410,7 +410,7 @@
                                             Singola/Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="Weapons/Guns.html">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=5">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -443,7 +443,7 @@
                                             Singola
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="Weapons/Guns.html">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=6">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -476,7 +476,7 @@
                                             Singola
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="Weapons/Guns.html">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=7">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -509,7 +509,7 @@
                                             Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="Weapons/Guns.html">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=8">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
@@ -542,7 +542,7 @@
                                             Doppia
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="Weapons/Guns.html">Apri Pagina</a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=9">Apri Pagina</a>
                                 </div>
                             </div>
                         </div>
