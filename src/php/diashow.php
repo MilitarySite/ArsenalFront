@@ -68,7 +68,13 @@
     </div>
 </nav>
 
+<header class="masthead">
+        <div class="container">
+            <div class="masthead-heading text-uppercase fs-title">Scegli l'arma che preferisci!</div>  
+        </div>
+    </header>
 
+    <div id="diashow-container"></div>
 
 <footer class="footer py-4">
         <div class="container">
@@ -93,9 +99,9 @@
             </div>
         </div>
     </footer>
-</body>
-<div id="diashow-container"></div>
 
+
+</body>
 <script>
     // Recupera il valore imgid dalla query string PHP
     var imgid = <?php echo isset($_GET['imgid']) ? $_GET['imgid'] : 0; ?>;
