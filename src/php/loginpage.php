@@ -49,7 +49,7 @@
 <a href=""></a>
     
 
-  <script  src="./script.js"></script>
+  <script  src="logscript.js"></script>
 
 </body>
 </html>
