@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Admin Login</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="../css/logstyle.css">
+<link rel="stylesheet" href="../css/loginstyle.css">
 
 </head>
 <body>
@@ -33,7 +33,7 @@
           </div>
           <div class="modal-buttons">
             <button class="input-button" type="submit">Login</button>
-            <a href="../../../src/index.php"  class="input-button">Home</a>
+            <a href="../index.php" class="input-button">Home</a>
           </div>
           
         </div>
