@@ -272,7 +272,7 @@
                                             Singola
                                         </li>
                                     </ul>
-                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=1&tabelid=1" ></a>
+                                    <a class="btn btn-primary btn-xl text-uppercase" href="diashow.php?imgid=1&tabelid=1">Apri Pagina</a>
                                     
                                 </div>
                             </div>
