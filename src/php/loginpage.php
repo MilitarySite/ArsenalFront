@@ -46,10 +46,9 @@
     </div>
 
 </form>
-<a href=""></a>
     
 
-  <script  src="logscript.js"></script>
+  <script  src="../js/logscript.js"></script>
 
 </body>
 </html>
