@@ -1,87 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
     }
 
     footer {
-      display: flex;
-      justify-content: space-around;
-      background-color: #333;
+      background-color: #000;
+      color: #fff;
       padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; /* Modificato l'allineamento verticale a flex-start */
     }
 
-    .member {
-      position: relative;
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left-section img {
+      width: 80px; /* Aumentato il valore per rendere il logo più grande */
+      height: 80px; /* Aumentato il valore per rendere il logo più grande */
+      margin-bottom: 10px; /* Aggiunto margine inferiore tra il logo e il testo */
+    }
+
+    .left-section-text {
+      align-self: flex-start; /* Allineare il testo all'inizio della colonna */
+    }
+
+    .email-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    .email-list-item {
+      margin-right: 10px;
       cursor: pointer;
-      overflow: hidden;
-      width: 150px; /* Larghezza dei blocchi */
-      height: 150px; /* Altezza dei blocchi */
-      border-radius: 50%;
-      margin: 0 20px; /* Spazio tra i blocchi */
+      transition: color 0.3s ease-in-out;
     }
 
-    .member img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      display: block;
+    .email-list-item:hover {
+      color: #ffcc00; /* Cambia colore al passaggio del mouse */
     }
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0);
-      opacity: 0;
-      border-radius: 50%;
-      transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    .right-section {
+      text-align: right;
     }
 
-    .member:hover .overlay {
-      background: rgba(255, 255, 255, 0.3);
-      opacity: 1;
+    .web-link {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 1px solid #fff; /* Sottolineatura simile a un link */
+      transition: color 0.3s ease-in-out;
+    }
+
+    .web-link:hover {
+      color: #ffcc00; /* Cambia colore al passaggio del mouse */
     }
   </style>
-  <script defer>
-    document.addEventListener('DOMContentLoaded', function () {
-      const members = document.querySelectorAll('.member');
-
-      members.forEach(member => {
-        member.addEventListener('click', function () {
-          const memberId = this.id;
-          const memberEmail = this.getAttribute('data-email');
-          const subject = encodeURIComponent(`Email per ${memberId}`);
-          const body = encodeURIComponent('Scrivi qui il tuo messaggio...');
-
-          window.location.href = `mailto:${memberEmail}?subject=${subject}&body=${body}`;
-        });
-      });
-    });
-  </script>
-  <title>Footer con effetto</title>
 </head>
 <body>
 
+  <!-- Il resto del tuo sito web -->
+
   <footer>
-    <div class="team-member" onclick="sendEmail('sappia.fulvio@polotecnologicoimperiese.it')">
-      <img src="member1.jpg" alt="Team Member 1">
+    <div class="left-section">
+      <img src="src/assets/img/Head_Logo.jpg" alt="Logo">
+      <div class="left-section-text">
+        <p>Piccolo testo</p>
+      </div>
     </div>
-    <div class="team-member" onclick="sendEmail('member2@example.com')">
-      <img src="member2.jpg" alt="Team Member 2">
-    </div>
-    <div class="team-member" onclick="sendEmail('member3@example.com')">
-      <img src="member3.jpg" alt="Team Member 3">
-    </div>
-    <div class="team-member" onclick="sendEmail('member4@example.com')">
-      <img src="member4.jpg" alt="Team Member 4">
+
+    <ul class="email-list">
+      <li class="email-list-item" onclick="window.location.href='mailto:indirizzo1@example.com';">indirizzo1@example.com</li>
+      <li class="email-list-item" onclick="window.location.href='mailto:indirizzo2@example.com';">indirizzo2@example.com</li>
+      <li class="email-list-item" onclick="window.location.href='mailto:indirizzo3@example.com';">indirizzo3@example.com</li>
+      <li class="email-list-item" onclick="window.location.href='mailto:indirizzo4@example.com';">indirizzo4@example.com</li>
+      <!-- Aggiungi altri indirizzi email se necessario -->
+    </ul>
+
+    <div class="right-section">
+      <p>Piccolo testo</p>
+      <a href="https://www.tuapaginaweb.com" class="web-link">Link alla pagina web</a>
     </div>
   </footer>
 
