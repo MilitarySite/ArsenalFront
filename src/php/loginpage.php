@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <title>Admin Login</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./logstyle.css">
+<link rel="stylesheet" href="../css/logstyle.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<form action="../../../src/php/login.php" method="post">
+<form action="login.php" method="post">
   <?php if (isset($_GET['error'])) { ?>
     <p class="error"><?php echo $_GET['error']; ?></p>
   <?php } ?>
@@ -40,7 +40,7 @@
         <div class="modal-right">
           <img src="https://cdn.discordapp.com/attachments/1198254784948474006/1198322500719878144/istockphoto-847891348-612x612.jpg?ex=65be7bcb&is=65ac06cb&hm=072b67089fc6e77f0077fda305f8a179acab11222bf2e520683774530e2ffdc1&" alt="">
         </div>
-        <a href="loginpage.php" class="icon-button">Test</a>
+        <a href="loginpage.php" class="icon-button">X</a>
     </svg>
       </div>
     </div>
