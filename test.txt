@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+            background-color: #333; /* Nero chiaro */
+            color: #fff; /* Colore del testo bianco */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .form {
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Ombra bianca */
+            overflow: hidden;
+            animation: slideIn 1s forwards;
+        }
+
+        .form:nth-child(1) {
+            animation-delay: 0s; /* Nessun ritardo per il primo form */
+        }
+
+        .form:nth-child(2) {
+            animation-delay: 0.5s; /* Ritardo di 0.5 secondi per il secondo form */
+        }
+
+        .header {
+            background-color: #3498db; /* Blu */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+            height: 200px; /* Altezza maggiore per il form */
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+    </style>
+    <title>Animated Forms</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="form">
+        <div class="header">Form 1</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+    </div>
+    <div class="form">
+        <div class="header">Form 2</div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
