@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File2</title>
+    <!-- Meta tag -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <meta name="description" content="ArsenalFront" />
+    <meta name="author" content="Team ArsenalFront" />
+
+    <!-- Meta tag og -->
+    <meta property="og:title" content="ArsenalFront">
+    <meta property="og:type" content="Weapons">
+    <meta property="og:description" content="ArsenalFront">
+
+    <!-- Generality -->
+    <title>ArsenalFront</title>
+
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/img/Head_Logo.jpg" />
+
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/search.css" />
+    <link rel="stylesheet" href="../css/animatedfooter.css" />
 </head>
 <body>
-    <h1>File2</h1>
-
+    
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <!-- Icon Left -->
+        <a class="navbar-brand" href="#page-top">
+            <h2 class="section-heading text-uppercase">ArsenalFront</h2>
+        </a>
+        <!-- Button Mobile - menu -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <!-- Nav site -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-0 py-lg-0">
+                <li class="nav-item">     
+                    <div class="search-container">
+                        <form action="php/search.php" method="get">
+                            <input type="text" name="query" placeholder="Cerca...">
+                            <button type="submit">Cerca</button>
+                        </form>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="WeaponPage.php">Armi</a></li>
+                <li class="nav-item"><a class="nav-link" href="loginpage.php">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
     <?php
 
 
@@ -155,7 +214,50 @@
 
     <?php echo '<img src="' . $srcImmagine . '" alt="Immagine">'; ?>
 
+    <footer class="footer py-4">
+    <?php include '../Footer.php';?>
+    </footer>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core theme JS-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/scripts.js"></script>
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = x.length };
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+
+    function sendEmail(email) {
+      window.location.href = 'mailto:' + email;
+    }
+  </script>
+
 
 </body>
 </html>
