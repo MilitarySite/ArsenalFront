@@ -60,8 +60,8 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Armi</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../php/login.php">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="WeaponPage.php">Armi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="loginpage.php">Login</a></li>
                 </ul>
             </div>
         </div>

@@ -64,7 +64,7 @@
                 </li>
                 <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="php/WeaponPage.php">Armi</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="php/loginpage.php">Login</a></li>
             </ul>
         </div>
     </div>
