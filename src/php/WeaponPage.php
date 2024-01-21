@@ -222,27 +222,7 @@
         </section>
 
         <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <!--<div class="col-lg-4 text-lg-start">Copyright &copy; Porro</div>-->
-                    <div class="member" id="member1" data-email="sappia.fulvio@polotecnologicoimperiese.it">
-                        <img src="member1.jpg" alt="Foto Sappippa">
-                        <div class="overlayz"></div>
-                      </div>
-                      <div class="member" id="member2" data-email="heinrich.kevin@polotecnologicoimperiese.it">
-                        <img src="member2.jpg" alt="Foto Tedesco Heineken">
-                        <div class="overlayz"></div>
-                      </div>
-                      <div class="member" id="member3" data-email="porro.matteo@polotecnologicoimperiese.it">
-                        <img src="member3.jpg" alt="Foto Re Dei Porri">
-                        <div class="overlayz"></div>
-                      </div>
-                      <div class="member" id="member4" data-email="contri.marco@polotecnologicoimperiese.it">
-                        <img src="member4.jpg" alt="Foto di quello che non inContri">
-                        <div class="overlayz"></div>
-                      </div>
-                </div>
-            </div>
+        <?php include '../Footer.php';?>
         </footer>
     
 
