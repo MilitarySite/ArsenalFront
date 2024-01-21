@@ -1,7 +1,7 @@
 <?php
     $imgid = isset($_GET['imgid']) ? $_GET['imgid'] : 0; 
     $tabelid = isset($_GET['tabelid']) ? $_GET['tabelid'] :0;
-    echo "value: " . $tabelid;
+    
 ?> 
 <!DOCTYPE html>
 <html lang="en">
@@ -232,4 +232,3 @@
 
 </body>
 </html>
-7u

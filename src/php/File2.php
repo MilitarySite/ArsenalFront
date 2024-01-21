@@ -80,31 +80,31 @@
     
     switch ($tabelid) {
         case '1':
-            $sql = "SELECT * FROM Hand_Guns WHERE id = $id"; 
+            $sql = "SELECT * FROM hand_guns WHERE id = $id"; 
             break;
         case '2':
-            $sql = "SELECT * FROM Assault_Rifles WHERE id = $id"; 
+            $sql = "SELECT * FROM assault_rifles WHERE id = $id"; 
             break;
         case '3':
-            $sql = "SELECT * FROM Machine_Guns WHERE id = $id"; 
+            $sql = "SELECT * FROM machine_guns WHERE id = $id"; 
             break;  
         case '4':
-            $sql = "SELECT * FROM Shotgun WHERE id = $id"; 
+            $sql = "SELECT * FROM shotgun WHERE id = $id"; 
             break;   
         case '5':
-            $sql = "SELECT * FROM Assault_SMG WHERE id = $id"; 
+            $sql = "SELECT * FROM assault_smg WHERE id = $id"; 
             break;   
         case '6':
-            $sql = "SELECT * FROM White_Weapons WHERE id = $id"; 
+            $sql = "SELECT * FROM white_weapons WHERE id = $id"; 
             break;   
         case '7':
-            $sql = "SELECT * FROM Granades WHERE id = $id"; 
+            $sql = "SELECT * FROM granades WHERE id = $id"; 
             break;   
         case '8':
-            $sql = "SELECT * FROM Sniper_Rifles WHERE id = $id"; 
+            $sql = "SELECT * FROM sniper_rifles WHERE id = $id"; 
             break;   
         case '9':
-            $sql = "SELECT * FROM Grenade_Launcher WHERE id = $id"; 
+            $sql = "SELECT * FROM grenade_launcher WHERE id = $id"; 
             break;   
         default:
             break;
@@ -126,6 +126,7 @@
         while ($row = $result->fetch_assoc()) {
             $title = $row["marca"];
             $maincontent = $row["modello"];
+            $secondarytext = $row["stato"];
             //$secondarycontent = $row["secondarycontent"];
     }
     } else {
@@ -142,6 +143,9 @@
 
     <div id="main-content">
         <p>Main Content: <?php echo $maincontent; ?></p>
+    </div>
+    <div id="main-content">
+        <p>Main Content: <?php echo $secondarytext; ?></p>
     </div>
 
    
