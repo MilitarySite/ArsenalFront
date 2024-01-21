@@ -130,6 +130,10 @@ body {
   color: #8c7569;
 }
 
+.link{
+  text-decoration: none;
+}
+
 .input-button {
   padding: 8px 12px;
   outline: none;
@@ -140,6 +144,7 @@ body {
   font-family: "Nunito", sans-serif;
   transition: 0.3s;
   cursor: pointer;
+  text-decoration: none;
 }
 .input-button:hover {
   background: #55311c;

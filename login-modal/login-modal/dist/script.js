@@ -5,6 +5,8 @@ const closeButton = document.querySelector(".close-button");
 const scrollDown = document.querySelector(".scroll-down");
 let isOpened = false;
 
+
+
 const openModal = () => {
   modal.classList.add("is-open");
   body.style.overflow = "hidden";
