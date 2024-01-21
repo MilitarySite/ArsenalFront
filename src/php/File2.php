@@ -67,12 +67,18 @@
         </div>
     </div>
 </nav>
+<header class="masthead">
+        <div class="container">
+            <div class="masthead-heading text-uppercase"> <?php echo $title ?></div>
+            <div class="masthead-heading text-uppercase fs-title">Il portale definitivo per gli appassionati d'armi! </div> 
+        </div>
+    </header>
     <?php
+
 
 
     $tabelid = isset($_GET['tabelid']) ? $_GET['tabelid'] : 0;
     $id = isset($_GET['id']) ? $_GET['id'] : 0; 
-    echo "value id" . $id;
 
     $immagini = [
         ['id' => 1, 'model' => 1, 'src' => '../assets/img/Diashow/P-1.jpg'],
