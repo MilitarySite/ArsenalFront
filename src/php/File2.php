@@ -195,7 +195,6 @@
             $modello = $row["modello"];
             $marca = $row["marca"];
             $stato = $row["stato"];
-
     }
     } else {
     echo "No data found.";
