@@ -26,6 +26,7 @@
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet" type="text/css">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
@@ -35,6 +36,7 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/search.css" />
     <link rel="stylesheet" href="../css/animatedfooter.css" />
+    <link rel="stylesheet" href="../css/File2css.css" />
 </head>
 <body>
     
@@ -69,8 +71,7 @@
 </nav>
 <header class="masthead">
         <div class="container">
-            <div class="masthead-heading text-uppercase"> <?php echo $title ?></div>
-            <div class="masthead-heading text-uppercase fs-title">Il portale definitivo per gli appassionati d'armi! </div> 
+            <div class="masthead-heading text-uppercase"> <?php echo $title ?></div> 
         </div>
     </header>
     <?php
@@ -206,15 +207,23 @@
      <!-- HTML-Struktur mit den abgerufenen Daten -->
      <h2><?php echo $title; ?></h2>
 
-    <div id="main-content">
-        <p>Main Content: <?php echo $maincontent; ?></p>
+     <div class="containah">
+  <div class="forma">
+    <div class="halfo">
+      <div class="headah">Form 1</div>
+      <div class="contento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt hic vitae delectus soluta laboriosam iusto, placeat aliquid! Quae voluptas mollitia dolor ullam iusto cupiditate earum, quaerat qui praesentium magni.</div>
     </div>
-    <div id="main-content">
-        <p>Main Content: <?php echo $secondarytext; ?></p>
-    </div>
+  </div>
 
-   
-    <h2> OIABG</h2>
+  <div class="forma">
+    <div class="halfo">
+      <div class="headah">Form 2</div>
+      <div class="contento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore pariatur nulla vel officia tenetur quisquam nihil veritatis similique porro ea voluptas aspernatur voluptatem ratione unde, dolorum sapiente nisi illo?</div>
+    </div>
+  </div>
+</div>
+
+
     <!-- command for call img-->
     <?php echo '<img src="' . $srcImmagine . '" alt="Immagine">'; ?>
 
