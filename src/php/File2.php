@@ -69,11 +69,7 @@
         </div>
     </div>
 </nav>
-<header class="masthead">
-        <div class="container">
-            <div class="masthead-heading text-uppercase"> <?php echo $title ?></div> 
-        </div>
-    </header>
+
     <?php
 
 
@@ -190,52 +186,53 @@
     if ($result->num_rows > 0) {
     // Retrieve and and store in variables to use throughout the code
         while ($row = $result->fetch_assoc()) {
-            $title = $row["marca"];
-            $maincontent = $row["modello"];
-            $secondarytext = $row["stato"];
-            //$secondarycontent = $row["secondarycontent"];
+            $title = $row["titolo"];
+            $maintext = $row["maintext"];
+            $secondarytext = $row["secondarytext"];
+            $summary = $row["summary"];
+            $sub1 = $row["sub1"];
+            $sub2 = $row["sub2"];
+            $modello = $row["modello"];
+            $marca = $row["marca"];
+            $stato = $row["stato"];
+
     }
     } else {
     echo "No data found.";
     }
    
-    // Close connection
-    $conn->close();
+        $conn->close();
     ?>
 
-    
-     <!-- HTML-Struktur mit den abgerufenen Daten -->
-     <h2><?php echo $title; ?></h2>
+    <header class="masthead">
+        <div class="container">
+            <div class="masthead-heading text-uppercase"> <?php echo $title ?></div>
+        </div>
+    </header>
+    <?php //echo '<img src="' . $srcImmagine . '" alt="Immagine">'; ?>
 
-     <div class="containah">
-  <div class="forma">
-    <div class="halfo">
-      <div class="headah">Form 1</div>
-      <div class="contento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur deserunt hic vitae delectus soluta laboriosam iusto, placeat aliquid! Quae voluptas mollitia dolor ullam iusto cupiditate earum, quaerat qui praesentium magni.</div>
+
+    <div class="containah">
+        <div class="forma">
+            <div class="halfo">
+                <div class="headah"><?php echo $sub1 ?></div>
+                <div class="contento"><?php echo $maintext ?></div>
+            </div>
+        </div>
+        <div class="forma">
+            <div class="halfo">
+                <div class="headah"><?php echo $sub2 ?></div>
+                <div class="contento"><?php echo $secondarytext ?></div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="forma">
-    <div class="halfo">
-      <div class="headah">Form 2</div>
-      <div class="contento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam labore pariatur nulla vel officia tenetur quisquam nihil veritatis similique porro ea voluptas aspernatur voluptatem ratione unde, dolorum sapiente nisi illo?</div>
-    </div>
-  </div>
-</div>
-
-
-    <!-- command for call img-->
-    <?php echo '<img src="' . $srcImmagine . '" alt="Immagine">'; ?>
-
-    <?php echo '<img src="' . $srcImmagine . '" alt="Immagine">'; ?>
-
-    <footer class="footer py-4">
-    <?php include '../Footer.php';?>
+    <footer>
+        <?php include '../Footer.php';?>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core theme JS-->
     <script src="../js/jquery.min.js"></script>
     <script src="../js/popper.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -243,10 +240,6 @@
     <script src="../js/main.js"></script>
     <script src="../js/scripts.js"></script>
 
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
     <script>
