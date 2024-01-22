@@ -210,7 +210,7 @@
     </header>
     <?php //echo '<img src="' . $srcImmagine . '" alt="Immagine">'; ?>
 
-
+    <section class="page-section bg-dark">
     <div class="containah">
         <div class="forma">
             <div class="halfo">
@@ -225,16 +225,17 @@
             </div>
         </div>
     </div>
+    </section>  
     <section class="page-section bg-dark">
             <div class="container">
                 <div class="text-center">
                     <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0">Sommario Informazioni Arma:</h3>
                     <br>
-                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0"> <?php echo $marca ?></h3>
+                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0">  Marca: <?php echo $marca ?></h3>
                     <br>
-                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0"> <?php echo $modello ?></h3>
+                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0"> Modello: <?php echo $modello ?></h3>
                     <br>
-                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0"> <?php echo $stato ?></h3>
+                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0"> Stato: <?php echo $stato ?></h3>
                     <br>
                 </div>
             </div>

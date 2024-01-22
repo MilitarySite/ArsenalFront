@@ -145,14 +145,14 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/Kevin.jpg" alt="..." />
                             <h4>Heinrich Dieter Kevin</h4>
                             <p class="text-muted"> Team Leader anch Backend Developer</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/Mattek.jpg" alt="..." />
                             <h4>Porro Matteo</h4>
                             <p class="text-muted">Frontend Developer</p>
                         </div>
