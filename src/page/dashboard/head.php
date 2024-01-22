@@ -50,7 +50,7 @@
     <!-- Bootstrap CSS
 		============================================ -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- nalika Icon CSS
+	  <!-- nalika Icon CSS
 		============================================ -->
     <link rel="stylesheet" href="css/nalika-icon.css">
     <!-- owl.carousel CSS

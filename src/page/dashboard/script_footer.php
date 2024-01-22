@@ -39,7 +39,7 @@
     <script src="js/calendar/moment.min.js"></script>
     <script src="js/calendar/fullcalendar.min.js"></script>
     <script src="js/calendar/fullcalendar-active.js"></script>
-	<!-- float JS
+	 <!-- float JS
 		============================================ -->
     <script src="js/flot/jquery.flot.js"></script>
     <script src="js/flot/jquery.flot.resize.js"></script>
@@ -55,14 +55,12 @@
 		============================================ -->
     <script src="js/main.js"></script>
 
-    <?php 
-      if (strpos($current_url, 'widgets.php') !== false) {
-        echo '<!-- plugins JS
-              ============================================ -->
-              <script src="js/plugins.js"></script>';
-        echo '<!-- tab JS
-              ============================================ -->
-              <script src="js/tab.js"></script>';
-      } 
-      
-    ?>
+
+
+    <!-- Widjet - edit - insertion - delete
+    ============================================ -->
+    <!-- tab JS
+    ============================================ -->
+    <script src="js/tab.js"></script>
+
+    
