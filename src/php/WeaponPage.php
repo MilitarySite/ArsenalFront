@@ -119,7 +119,7 @@
                                 <div class="portfolio-hover">
                                     <!-- <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div> -->
                                 </div>
-                                <img class="img-fluid" src="../assets/img/WeaponImage/MachineGunImage.jpg" alt="Immagine Mitragliatrice" />
+                                <img class="img-fluid" src="../assets/img/WeaponImage/LMG.jpg" alt="Immagine Mitragliatrice" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Mitragliatrici</div>
@@ -134,7 +134,7 @@
                                 <div class="portfolio-hover">
                                     <!-- <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div> -->
                                 </div>
-                                <img class="img-fluid" src="../assets/img/WeaponImage/ShotgunImage.jpg" alt="Immagine Fucile a Pompa" />
+                                <img class="img-fluid" src="../assets/img/WeaponImage/Pump.jpg" alt="Immagine Fucile a Pompa" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Armi a Canna Liscia</div>
@@ -194,7 +194,7 @@
                                 <div class="portfolio-hover">
                                     <<!-- <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div> -->
                                 </div>
-                                <img class="img-fluid" src="../assets/img/WeaponImage/SniperImage.jpg" alt="Immagine Fucile di Precisione" />
+                                <img class="img-fluid" src="../assets/img/WeaponImage/Sniper.jpg" alt="Immagine Fucile di Precisione" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Fucili di Precisione</div>
@@ -209,7 +209,7 @@
                                 <div class="portfolio-hover">
                                     <!-- <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div> -->
                                 </div>
-                                <img class="img-fluid" src="../assets/img/WeaponImage/GrenadeLauncherImage.png" alt="Immagine Lanciagranate" />
+                                <img class="img-fluid" src="../assets/img/WeaponImage/Puffi.jpg" alt="Immagine Lanciagranate" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Lanciagranate</div>
