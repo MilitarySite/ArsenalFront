@@ -12,7 +12,9 @@ body {
 input[type="text"] {
     padding: 8px;
 }
-
+li{
+    text-decoration: none;
+  }
 button {
     padding: 8px 16px;
     background-color: #4CAF50;

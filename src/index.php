@@ -175,7 +175,7 @@
     </main>
 
     <!-- Footer-->
-    <footer class="footer py-4">
+    <footer>
     <?php include 'Footer.php';?>
     </footer>
 

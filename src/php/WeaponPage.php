@@ -221,8 +221,8 @@
             </div>
         </section>
 
-        <footer class="footer py-4">
-        <?php include '../Footer.php';?>
+        <footer >
+            <?php include '../Footer.php';?>
         </footer>
     
 

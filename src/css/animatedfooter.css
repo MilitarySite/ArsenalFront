@@ -28,6 +28,10 @@
 li{
   text-decoration: none;
 }
+ul{
+  text-decoration: none;
+
+}
 .footer-clean ul a:hover {
   opacity:1;
 }
