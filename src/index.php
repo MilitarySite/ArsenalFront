@@ -90,7 +90,11 @@
         <section class="page-section bg-dark">
             <div class="container">
                 <div class="text-center">
-                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0">Esplorate la nostra vasta gamma di descrizioni dettagliate sulle armi da fuoco di ultima generazione. Il nostro sito offre approfondimenti tecnici, immagini esplicative e guide all'utilizzo su tutte le categorie di armi attualmente utilizzate nel ramo militare. Che siate tiratori sportivi, collezionisti o semplici curiosi, ArsenalFront offre un ambiente informativo e sicuro per soddisfare la vostra passione.</h3>
+                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0">Esplorate la nostra vasta gamma di descrizioni dettagliate sulle armi da fuoco di ultima generazione. </h3>
+                    <br>
+                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0"> Il nostro sito offre approfondimenti tecnici, immagini esplicative e guide all'utilizzo su tutte le categorie di armi attualmente utilizzate nel ramo militare. </h3>
+                    <br>
+                    <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0"> Che siate tiratori sportivi, collezionisti o semplici curiosi, ArsenalFront offre un ambiente informativo e sicuro per soddisfare la vostra passione. </h3>
                 </div>
             </div>
         </section>    
@@ -141,14 +145,14 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/Kevin.jpg" alt="..." />
                             <h4>Heinrich Dieter Kevin</h4>
                             <p class="text-muted"> Team Leader anch Backend Developer</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/Mattek.jpg" alt="..." />
                             <h4>Porro Matteo</h4>
                             <p class="text-muted">Frontend Developer</p>
                         </div>

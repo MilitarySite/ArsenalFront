@@ -9,7 +9,7 @@
   .forma {
     width: 48%;
     height: auto;
-    background-color: #fff;
+    background-color: grey;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -31,8 +31,8 @@
     box-sizing: border-box;
   }
   .headah {
-          background-color: #3498db; /* Blu */
-          color: #fff;
+          background-color: black; /* Blu */
+          color: #ffc800;
           padding: 10px;
           text-align: center;
           font-weight: bold;
