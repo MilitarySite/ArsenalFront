@@ -186,8 +186,8 @@
         var position = index+1;
         imgElement.src = img.src;
         imgElement.addEventListener('click', function() {
-            // Quando l'immagine è cliccata, reindirizza con l'ID (posizione + 1)
-            alert('hai cliccato sull\'immagine alla posizione: ' + index + position)
+            // Quando l'immagine è cliccata, reindirizza con l'ID (posizione + 1) debug kevin
+            //alert('hai cliccato sull\'immagine alla posizione: ' + index + position)
             window.location.href = 'File2.php?id=' + position + '&tabelid=' + tabelid;
         });
 
