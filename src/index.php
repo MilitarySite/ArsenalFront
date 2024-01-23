@@ -159,7 +159,7 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/Marco.jpg" alt="..." />
                             <h4>Contri Marco</h4>
                             <p class="text-muted">Content Searcher</p>
                         </div>
