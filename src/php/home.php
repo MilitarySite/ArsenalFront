@@ -19,10 +19,10 @@ if (!isset($_SESSION['user_name'])) {
 <body>
 
 <h1>Benvenuto, <?php echo $_SESSION['name']; ?>!</h1>
-<p>Contenuto della tua pagina home...</p>
+<a href="../page/dashboard/index.php?name=<?php echo $_SESSION['name']; ?>">
 
 <!-- Aggiungi il link per il logout -->
-<a href="logout.php">Logout</a>
+<a href="logout.php?">Logout</a>
 
 </body>
 </html>

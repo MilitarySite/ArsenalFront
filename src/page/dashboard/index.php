@@ -2,6 +2,7 @@
 <html lang="en">
     <?php
         include "head.php";
+        $name = isset($_GET['name']) ? $_GET['name'] : 'admin'; 
     ?>
 <body>
     <?php

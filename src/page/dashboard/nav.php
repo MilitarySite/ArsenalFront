@@ -9,7 +9,7 @@
 			<div class="nalika-profile">
 				<div class="profile-dtl">
 					<a href="index.php"><img src="img/logo/Logo_account.jpg" alt="" /></a>
-					<h2>Admin <!--<span class="min-dtn">Modifica</span>--></h2>
+					<h2><?php echo $name ?> <!--<span class="min-dtn">Modifica</span>--></h2>
 				</div>
 			</div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
@@ -219,7 +219,7 @@
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
 															<i class="icon nalika-user nalika-user-rounded header-riht-inf" aria-hidden="true"></i>
-															<span class="admin-name">Admin</span>
+															<span class="admin-name"><?php echo $name ?></span>
 															<i class="icon nalika-down-arrow nalika-angle-dw nalika-icon"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
