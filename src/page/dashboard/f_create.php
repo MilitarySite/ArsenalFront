@@ -9,35 +9,45 @@
     <?php
         include "nav.php";
     ?>
-    
+
     <?php
         include "../../php/db_conn.php"
 
-        // Se il modulo è stato inviato
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Recupera l'ID, marca, modello e stato dal form
             $id = $_POST['id'];
             $new_marca = $_POST['new_marca'];
-            $new_modello = $_POST['new_modello'];
-            $new_stato = $_POST['new_stato'];
-
+             $new_modello = $_POST['new_modello'];
+              $new_stato = $_POST['new_stato'];
+        
             // Esegue la query di aggiornamento
             $sql = "UPDATE users SET marca='$new_marca' WHERE id=$id";
                 $sql = "UPDATE users SET modello='$new_modello' WHERE id=$id";
             $sql = "UPDATE users SET stato='$new_stato' WHERE id=$id";
-
-
+        
+        
+            // Query di inserimento dei dati
+            $sql = "INSERT INTO utenti (marca, modello, stato) VALUES ('$marca', '$modello', '$stato')";
+        
             if ($conn->query($sql) === TRUE) {
-                echo "Modifica aggiornata con successo";
+                echo "Utente aggiunto con successo";
             } else {
-                echo "Errore nell'aggiornamento. " . $conn->error;
+                echo "Errore nell'aggiunta dell'utente: " . $conn->error;
             }
+        
+            // Chiudi la connessione al database
+            $conn->close();
+        } else {
+            // Gestire il caso in cui il modulo non è stato inviato
+            echo "Il modulo non è stato inviato correttamente.";
         }
     ?>
-    
+
     <!-- Form HTML -->
 
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <h1>Aggiunta Utente</h1>
+
+    <form action="processa_form.php" method="post">
         <label for="id">ID Arma:</label>
         <input type="text" name="id" required>
 
@@ -51,7 +61,7 @@
         <input type="stato" name="new_stato" required>
 
 
-        <input type="submit" value="Modifica">
+        <input type="submit" value="Aggiungi">
     </form>
 
     <?php

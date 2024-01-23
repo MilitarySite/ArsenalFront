@@ -52,7 +52,7 @@
     
         <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="pop1" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- <div class="portfolio-modal modal fade" id="pop1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="close-modal" data-bs-dismiss="modal"><img src="../assets/img/close-icon.svg"
@@ -61,9 +61,9 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-8">
                                 <div class="modal-body">
-                                    <!-- Project details-->
+                                    
                                     <h2 class="text-uppercase">Settings</h2>
-                                    <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                                    
                                     <img class="img-fluid d-block mx-auto" src="../assets/img/WeaponImage/PistolImage.jpg" alt="Immagine Pistola"/>
                                 <p>non disponi del piano premium, compratelo kevin!</p>
                                 </div>
@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </main>
 </body>

@@ -23,6 +23,7 @@ if (!isset($_SESSION['user_name'])) {
 
 
 
+
 <!-- Aggiungi il link per il logout -->
 <a href="logout.php?">Logout</a>
 

@@ -3,17 +3,21 @@
     <div class="left-sidebar-pro">
         <nav id="sidebar" class="">
             <div class="sidebar-header">
-                <a href="index.php"><img class="main-logo" src="img/logo/Military_Army_Logo.jpg" alt="Logo" /></a>
+                <a href="index.php?name=<?php echo $name ?>"><img class="main-logo" src="img/logo/Military_Army_Logo.jpg" alt="Logo" /></a>
                 <strong><img src="img/logo/logosn.png" alt="" /></strong>
             </div>
 			<div class="nalika-profile">
 				<div class="profile-dtl">
-					<a href="index.php"><img src="img/logo/Logo_account.jpg" alt="" /></a>
+					<a href="index.php?name=<?php echo $name ?>"><img src="img/logo/Logo_account.jpg" alt="" /></a>
 					<h2>
                         <?php 
                             if (strpos($current_url, 'index.php') !== false) {
                                 echo $name;
-                            }else {
+                            } elseif (strpos($current_url, 'settings.php') !== false) {
+                                echo $name;
+                            } elseif (strpos($current_url, 'profile.php') !== false) {
+                                echo $name;
+                            } else {
                                 echo "Admin";
                             }
                         ?> 
@@ -24,34 +28,33 @@
                 <nav class="sidebar-nav left-sidebar-menu-pro">
                     <ul class="metismenu" id="menu1">
                         <li class="active">
-                            <a class="has-arrow" href="index.php">
+                            <a class="has-arrow" href="index.php?name=<?php echo $name ?>">
 								   <i class="icon nalika-home icon-wrap"></i>
 								   <span class="mini-click-non">Home</span>
 							</a>
                             <ul class="submenu-angle" aria-expanded="true">
-                                <li><a title="Dashboard" href="./index.php"><span class="mini-sub-pro">Dashboard</span></a></li>
-                                <li><a title="Table List" href="./table_list.php"><span class="mini-sub-pro">Table List</span></a></li>
-                                <li><a title="Edit" href="./f_edit.php"><span class="mini-sub-pro">Edit</span></a></li>
-                                <li><a title="Insertion" href="./f_insertion.php"><span class="mini-sub-pro">Insertion</span></a></li>
-                                <li><a title="Delete" href="./f_delete.php"><span class="mini-sub-pro">Delete</span></a></li>
-                                <li><a title="Detail" href="./detail.php"><span class="mini-sub-pro">Detail</span></a></li>
-                                <li><a title="File Manager" href="./file-manager.php"><span class="mini-sub-pro">File Manager</span></a></li>
-                                <li><a title="Analytics" href="./analytics.php"><span class="mini-sub-pro">Analytics</span></a></li>
-                                <li><a title="Widgets" href="./widgets.php"><span class="mini-sub-pro">Widgets</span></a></li>
+                                <li><a title="Dashboard" href="./index.php?name=<?php echo $name ?>"><span class="mini-sub-pro">Dashboard</span></a></li>
+                                <li><a title="Table List" href="./table_list.php" target="_blank"><span class="mini-sub-pro">Table List</span></a></li>
+                                <li><a title="Edit" href="./f_edit.php" target="_blank"><span class="mini-sub-pro">Edit</span></a></li>
+                                <li><a title="Insertion" href="./f_insertion.php" target="_blank"><span class="mini-sub-pro">Insertion</span></a></li>
+                                <li><a title="Delete" href="./f_delete.php" target="_blank"><span class="mini-sub-pro">Delete</span></a></li>
+                                <li><a title="File Manager" href="./file-manager.php" target="_blank"><span class="mini-sub-pro">File Manager</span></a></li>
+                                <li><a title="Analytics" href="./analytics.php" target="_blank"><span class="mini-sub-pro">Analytics</span></a></li>
+                                <li><a title="Widgets" href="./widgets.php" target="_blank"><span class="mini-sub-pro">Widgets</span></a></li>
                             </ul>
                         </li>
                         <li>
                             <a class="has-arrow" href="mailbox.php" aria-expanded="false"><i class="icon nalika-table icon-wrap"></i> <span class="mini-click-non">Data Tables</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="Peity Charts" href="static-table.php"><span class="mini-sub-pro">Static Table</span></a></li>
-                                <li><a title="Data Table" href="data-table.php"><span class="mini-sub-pro">Data Table</span></a></li>
+                                <li><a title="Peity Charts" href="static-table.php" target="_blank"><span class="mini-sub-pro">Static Table</span></a></li>
+                                <li><a title="Data Table" href="data-table.php" target="_blank"><span class="mini-sub-pro">Data Table</span></a></li>
                             </ul>
                         </li>
                         <li>
                             <a class="has-arrow" href="mailbox.php" aria-expanded="false"><i class="fa big-icon fa-pie-chart icon-wrap"></i> <span class="mini-click-non">Miscellaneous</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
-                                <li><a title="404 Page" href="404.php"><span class="mini-sub-pro">404 Page</span></a></li>
-                                <li><a title="500 Page" href="500.php"><span class="mini-sub-pro">500 Page</span></a></li>
+                                <li><a title="404 Page" href="404.php" target="_blank"><span class="mini-sub-pro">404 Page</span></a></li>
+                                <li><a title="500 Page" href="500.php" target="_blank"><span class="mini-sub-pro">500 Page</span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -68,7 +71,7 @@
             <div class="row">  
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro bg-dark">
-                        <a href="index.php"><img class="main-logo" src="img/logo/Military_Army_Logo.jpg" alt="" /></a>
+                        <a href="index.php?name=<?php echo $name ?>"><img class="main-logo" src="img/logo/Military_Army_Logo.jpg" alt="" /></a>
                     </div>
                 </div>
             </div>
@@ -224,11 +227,23 @@
                                                 <li class="nav-item">
                                                     <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
 															<i class="icon nalika-user nalika-user-rounded header-riht-inf" aria-hidden="true"></i>
-															<span class="admin-name"><?php echo $name ?></span>
+															<span class="admin-name">
+                                                                <?php 
+                                                                    if (strpos($current_url, 'index.php') !== false) {
+                                                                        echo $name;
+                                                                    } elseif (strpos($current_url, 'settings.php') !== false) {
+                                                                        echo $name;
+                                                                    } elseif (strpos($current_url, 'profile.php') !== false) {
+                                                                        echo $name;
+                                                                    } else {
+                                                                        echo "Admin";
+                                                                    }
+                                                                ?> 
+                                                            </span>
 															<i class="icon nalika-down-arrow nalika-angle-dw nalika-icon"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                        <li><a href="profile.php"><span class="icon nalika-user author-log-ic"></span> My Profile</a>
+                                                        <li><a href="profile.php?name=<?php echo $name ?>"><span class="icon nalika-user author-log-ic"></span> My Profile</a>
                                                         </li>
                                                         <li><a href="settings.php?name=<?php echo $name ?>"><span class="icon nalika-settings author-log-ic"></span> Settings</a>
                                                         </li>
@@ -250,7 +265,7 @@
 </section>
 
 <section>
-    <!-- Mobile Menu start -->                      <!-- Disabilitare -->
+    <!-- Mobile Menu start -->                      
     <div class="mobile-menu-area">
                 <div class="container">
                     <div class="row">
