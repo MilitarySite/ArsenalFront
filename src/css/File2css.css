@@ -1,0 +1,77 @@
+.containah {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px; /* Per separare il form dal top della pagina */
+  }
+
+  .forma {
+    width: 48%;
+    height: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(-50px); /* Inizialmente spostato a sinistra per l'animazione */
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .forma:hover {
+    box-shadow: 0 15px 30px white;
+  }
+
+  .forma:hover .title {
+    color: #3498db;
+  }
+
+  .halfo {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .headah {
+          background-color: black; /* Blu */
+          color: #ffc800;
+          padding: 10px;
+          text-align: center;
+          font-weight: bold;
+      }
+
+  .contento {
+          padding: 20px;
+          max-height: 500px;
+          font-family: 'Work Sans', sans-serif;
+      }
+
+  /* Animazione per il primo form (a sinistra) */
+  .forma:nth-child(1) {
+    animation: slideInLeft 0.5s ease-out 0.5s forwards;
+  }
+
+  /* Animazione per il secondo form (a destra) */
+  .forma:nth-child(2) {
+    animation: slideInRight 0.5s ease-out 1s forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

@@ -32,12 +32,12 @@ $(function() {
     },
 		events: [
 			{
-				title: 'All Day Event',
+				title: 'Giorno ultimo',
 				start: YM + '-01',
 				color: '#e91e63'
 			},
 			{
-				title: 'Long Event',
+				title: 'Realizzazine Progetto',
 				start: YM + '-07',
 				end: YM + '-10',
 				color: '#59e0c5'
@@ -53,43 +53,6 @@ $(function() {
 				title: 'Repeating Event',
 				start: YM + '-16T16:00:00',
 				color: '#FF5370'
-			},
-			{
-				title: 'Conference',
-				start: YESTERDAY,
-				end: TOMORROW,
-				color: '#f3c30b'
-			},
-			{
-				title: 'Meeting',
-				start: TODAY + 'T10:30:00',
-				end: TODAY + 'T12:30:00',
-				color: '#1f2e86'
-			},
-			{
-				title: 'Lunch',
-				start: TODAY + 'T12:00:00',
-				color: '#0D4CFF'
-			},
-			{
-				title: 'Meeting',
-				start: TODAY + 'T14:30:00',
-				color: '#1f2e86'
-			},
-			{
-				title: 'Happy Hour',
-				start: TODAY + 'T17:30:00',
-				color: '#AA00FF'
-			},
-			{
-				title: 'Dinner',
-				start: TODAY + 'T20:00:00',
-				color: '#00BCD4'
-			},
-			{
-				title: 'Birthday Party',
-				start: TOMORROW + 'T07:00:00',
-				color: '#FF5722'
 			},
 			{
 				title: 'Click for Google',

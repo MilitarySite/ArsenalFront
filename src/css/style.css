@@ -4,6 +4,29 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ 
+/* css per diashow */
+ #diashow-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+li{
+  text-decoration: none;
+}
+
+#diashow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  position: absolute;
+  transition: opacity 1.5s ease;
+}
+
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;

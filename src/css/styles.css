@@ -25,7 +25,7 @@
   --bs-white: #fff;
   --bs-gray: #6c757d;
   --bs-gray-dark: #343a40;
-  --bs-gray-100: #f8f9fa;
+  --bs-gray-100: #f8fcftea9fa;
   --bs-gray-200: #e9ecef;
   --bs-gray-300: #dee2e6;
   --bs-gray-400: #ced4da;
@@ -119,7 +119,9 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: 700;
   line-height: 1.2;
 }
-
+li{
+  text-decoration: none;
+}
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
@@ -1281,7 +1283,7 @@ progress {
   }
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 33.3333333%;
   }
   .col-lg-5 {
     flex: 0 0 auto;
@@ -10843,6 +10845,7 @@ p {
 
 .page-section {
   padding: 6rem 0;
+  color: rgba(0, 0, 0, 0.55)
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
@@ -11006,18 +11009,20 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #5c636a;
   align-items: center;
   justify-content: center;
   opacity: 0;
   transition: opacity ease-in-out 0.25s;
+
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
   font-size: 1.25rem;
   color: white;
 }
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
-  opacity: 1;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 #portfolio .portfolio-item .portfolio-caption {
   padding: 1.5rem;

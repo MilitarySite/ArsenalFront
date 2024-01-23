@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+input[type="text"] {
+    padding: 8px;
+}
+li{
+    text-decoration: none;
+  }
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

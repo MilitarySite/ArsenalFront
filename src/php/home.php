@@ -1,25 +1,31 @@
-<?php 
+<?php
 session_start();
 
-if (isset($_SESSION['id']) && isset($_SESSION['user_name'])) {
 
- ?>
+if (!isset($_SESSION['user_name'])) {
+    header("Location: loginpage.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>HOME</title>
-	<link rel="stylesheet" type="text/css" href="../css/logstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/logstyle.css">
 </head>
 <body>
-     <h1>Hello, <?php echo $_SESSION['name']; ?></h1>
-     <a href="interface_admin.php"></a>
-     <a href="logout.php">Logout</a>
+
+<h1>Benvenuto, <?php echo $_SESSION['name']; ?>!</h1>
+<a href="../page/dashboard/index.php?name=<?php echo $_SESSION['name']; ?>"> </a>
+
+
+
+
+<!-- Aggiungi il link per il logout -->
+<a href="logout.php?">Logout</a>
+
 </body>
 </html>
-
-<?php 
-}else{
-     header("Location: loginpage.php");
-     exit();
-}
- ?>
