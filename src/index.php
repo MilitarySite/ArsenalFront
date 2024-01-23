@@ -138,7 +138,7 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/team/Sappippa.jpeg" alt="..." />
                             <h4>Sappia Fulvio</h4>
                             <p class="text-muted">Database Designer</p>
                         </div>
@@ -147,7 +147,7 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/Kevin.jpg" alt="..." />
                             <h4>Heinrich Dieter Kevin</h4>
-                            <p class="text-muted"> Team Leader anch Backend Developer</p>
+                            <p class="text-muted"> Team Leader and Backend Developer</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
