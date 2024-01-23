@@ -9,7 +9,7 @@
   .forma {
     width: 48%;
     height: auto;
-    background-color: grey;
+    background-color: white;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -19,7 +19,7 @@
   }
 
   .forma:hover {
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px white;
   }
 
   .forma:hover .title {

@@ -308,7 +308,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Mitragliatrici</h2>
                                     <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                                    <img class="img-fluid d-block mx-auto" src="../assets/img/WeaponImage/MachineGunImage.jpg" alt="Immagine Mitragliatrice" />
+                                    <img class="img-fluid d-block mx-auto" src="../assets/img/WeaponImage/LMG.jpg" alt="Immagine Mitragliatrice" />
                                     <p>Scopri le incredibili capacità delle mitragliatrici attraverso descrizioni dettagliate e immagini accattivanti sulla nostra pagina dedicata. Preparati a scoprire tante informazioni sulle armi pesanti più famose.</p>
                                     <ul class="list-inline">
                                         <li>
@@ -341,7 +341,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Armi a Canna Liscia</h2>
                                     <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                                    <img class="img-fluid d-block mx-auto" src="../assets/img/WeaponImage/ShotgunImage.jpg" alt="Immagine Fucile a Pompa" />
+                                    <img class="img-fluid d-block mx-auto" src="../assets/img/WeaponImage/Pump.jpg" alt="Immagine Fucile a Pompa" />
                                     <p>Esplora la vasta gamma di fucili a pompa attraverso descrizioni dettagliate e immagini accattivanti sulla nostra pagina dedicata. Vieni a scoprire le caratteristiche che rendono questi "signori della guerra" obbligatori in ogni scontro ravvicinato</p>
                                     <ul class="list-inline">
                                         <li>
@@ -473,7 +473,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Fucili di Precisione</h2>
                                     <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                                    <img class="img-fluid d-block mx-auto" src="../assets/img/WeaponImage/SniperImage.jpg" alt="Immagine Fucile di Precisione" />
+                                    <img class="img-fluid d-block mx-auto" src="../assets/img/WeaponImage/Sniper.jpg" alt="Immagine Fucile di Precisione" />
                                     <p>Sei stato colpito anche tu dal fascino dei fucili di precisione come con un proiettile alla testa?Ti interessa sapere qual'è il fucile più pericoloso? Se vuoi sapere tante curiosità, apri la prossima pagina.</p>
                                     <ul class="list-inline">
                                         <li>
@@ -506,7 +506,7 @@
                                     <!-- Project details-->
                                     <h2 class="text-uppercase">Lanciagranate</h2>
                                     <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
-                                    <img class="img-fluid d-block mx-auto" src="../assets/img/WeaponImage/GrenadeLauncherImage.png" alt="Immagine Lanciagranate" />
+                                    <img class="img-fluid d-block mx-auto" src="../assets/img/WeaponImage/Puffi.jpg" alt="Immagine Lanciagranate" />
                                     <p>Ti piacciono le esplosioni? Senti come un botto irrefrenabile, come una miccia pronta a scoppiare dentro di te? Vuoi scoprire l'unica arma in grado di causare danni catastrofici in un istante? Apri la pagina sottostante.</p>
                                     <ul class="list-inline">
                                         <li>

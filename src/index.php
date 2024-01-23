@@ -87,7 +87,7 @@
 
     <main>
 
-        <section class="page-section bg-dark">
+        <section class="page-section bg-dark" id="diashow">
             <div class="container">
                 <div class="text-center">
                     <h3 class="section-subheading text-muted fw-bold mb-5 mb-lg-0">Esplorate la nostra vasta gamma di descrizioni dettagliate sulle armi da fuoco di ultima generazione. </h3>
@@ -100,7 +100,7 @@
         </section>    
 
         <!-- Diashow Weapons -->
-        <section class="page-section py-0" id="diashow"> <!-- continua fu -->
+        <section class="page-section py-0"> <!-- continua fu -->
             <div class="home-slider owl-carousel js-fullheight">
                 <div class="slider-item js-fullheight" style="background-image:url(assets/img/IndexMilitaryImages/Military_Weapons.jpg);">
                     <div class="overlay"></div>
@@ -161,7 +161,7 @@
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="..." />
                             <h4>Contri Marco</h4>
-                            <p class="text-muted">Searchbar Designer</p>
+                            <p class="text-muted">Content Searcher</p>
                         </div>
                     </div>
                 </div>

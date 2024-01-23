@@ -16,7 +16,7 @@
             <h4>Project</h4>
             <ul>
               <br>
-              <li><a href="https://github.com/MilitarySite/ArsenalFront">GitHub</a></li>
+              <li><a href="https://github.com/MilitarySite/ArsenalFront" target="_blank">GitHub</a></li>
             </ul>
           </div>
         </div>
