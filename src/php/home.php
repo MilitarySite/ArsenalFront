@@ -19,7 +19,9 @@ if (!isset($_SESSION['user_name'])) {
 <body>
 
 <h1>Benvenuto, <?php echo $_SESSION['name']; ?>!</h1>
-<a href="../page/dashboard/index.php?name=<?php echo $_SESSION['name']; ?>">
+<a href="../page/dashboard/index.php?name=<?php echo $_SESSION['name']; ?>"> </a>
+
+
 
 <!-- Aggiungi il link per il logout -->
 <a href="logout.php?">Logout</a>

@@ -9,7 +9,15 @@
 			<div class="nalika-profile">
 				<div class="profile-dtl">
 					<a href="index.php"><img src="img/logo/Logo_account.jpg" alt="" /></a>
-					<h2><?php echo $name ?> <!--<span class="min-dtn">Modifica</span>--></h2>
+					<h2>
+                        <?php 
+                            if (strpos($current_url, 'index.php') !== false) {
+                                echo $name;
+                            }else {
+                                echo "Admin";
+                            }
+                        ?> 
+                    </h2>
 				</div>
 			</div>
             <div class="left-custom-menu-adp-wrap comment-scrollbar">
@@ -19,7 +27,7 @@
                             <a class="has-arrow" href="index.php">
 								   <i class="icon nalika-home icon-wrap"></i>
 								   <span class="mini-click-non">Home</span>
-								</a>
+							</a>
                             <ul class="submenu-angle" aria-expanded="true">
                                 <li><a title="Dashboard" href="./index.php"><span class="mini-sub-pro">Dashboard</span></a></li>
                                 <li><a title="Table List" href="./table_list.php"><span class="mini-sub-pro">Table List</span></a></li>
@@ -32,7 +40,6 @@
                                 <li><a title="Widgets" href="./widgets.php"><span class="mini-sub-pro">Widgets</span></a></li>
                             </ul>
                         </li>
-                        
                         <li>
                             <a class="has-arrow" href="mailbox.php" aria-expanded="false"><i class="icon nalika-table icon-wrap"></i> <span class="mini-click-non">Data Tables</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
@@ -40,7 +47,6 @@
                                 <li><a title="Data Table" href="data-table.php"><span class="mini-sub-pro">Data Table</span></a></li>
                             </ul>
                         </li>
-
                         <li>
                             <a class="has-arrow" href="mailbox.php" aria-expanded="false"><i class="fa big-icon fa-pie-chart icon-wrap"></i> <span class="mini-click-non">Miscellaneous</span></a>
                             <ul class="submenu-angle" aria-expanded="false">
@@ -48,7 +54,6 @@
                                 <li><a title="500 Page" href="500.php"><span class="mini-sub-pro">500 Page</span></a></li>
                             </ul>
                         </li>
-                        
                     </ul>
                 </nav>
             </div>
@@ -60,7 +65,7 @@
     <!-- Start Welcome area -->
     <div class="all-content-wrapper">
         <div class="container-fluid">
-            <div class="row">  <!-- Quando ridotta -->
+            <div class="row">  
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="logo-pro bg-dark">
                         <a href="index.php"><img class="main-logo" src="img/logo/Military_Army_Logo.jpg" alt="" /></a>
@@ -223,11 +228,11 @@
 															<i class="icon nalika-down-arrow nalika-angle-dw nalika-icon"></i>
 														</a>
                                                     <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                        <li><a href="#"><span class="icon nalika-user author-log-ic"></span> My Profile</a>
+                                                        <li><a href="profile.php"><span class="icon nalika-user author-log-ic"></span> My Profile</a>
                                                         </li>
-                                                        <li><a href="#"><span class="icon nalika-settings author-log-ic"></span> Settings</a>
+                                                        <li><a href="settings.php?name=<?php echo $name ?>"><span class="icon nalika-settings author-log-ic"></span> Settings</a>
                                                         </li>
-                                                        <li><a href="login.php"><span class="icon nalika-unlocked author-log-ic"></span> Log Out</a>
+                                                        <li><a href="../../php/logout.php"><span class="icon nalika-unlocked author-log-ic"></span> Log Out</a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -240,6 +245,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 </section>
 
 <section>
@@ -291,4 +298,6 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 </section>

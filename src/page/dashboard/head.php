@@ -13,7 +13,7 @@
 
             if (strpos($current_url, 'index.php') !== false) {
                 echo '<title>Dashboard ArsenalFront</title>';
-            } elseif (strpos($current_url, '404.php') !== false || strpos($current_url, 'index.php') !== false) {
+            } elseif (strpos($current_url, '404.php') !== false) {
                 echo '<title>404 Page</title>';
             } elseif (strpos($current_url, '500.php') !== false) {
                 echo '<title>500 Page</title>';
@@ -86,7 +86,7 @@
     <link rel="stylesheet" href="css/calendar/fullcalendar.print.min.css">
     <!-- style CSS
 		============================================ -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
